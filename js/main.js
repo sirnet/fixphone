@@ -21,4 +21,25 @@ $(function(){
             i=0;
         }
     }
+
+    let btnPosition = document.getElementById("btn-position");
+    let formAction = document.getElementById("form-action");
+    let btnAction = document.getElementById("btn-action");
+    let closeForm = document.getElementById("close-form");
+
+    btnPosition.onclick =  function(){
+        btnPosition.classList.add("btn-action");
+        formAction.classList.add("form__main-action")
+    }
+
+    btnAction.onclick =  function(){
+        btnPosition.classList.add("btn-action");
+        formAction.classList.remove("form__main-action")
+}
+    closeForm.onclick = function() {
+        formAction.classList.remove("form__main-action")
+        btnPosition.classList.remove("btn-action");
+    }
+    
+
 });

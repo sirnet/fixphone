@@ -107,7 +107,28 @@
             
             
         </div>
-        <button class="footer__bth btn__position">оставить заявку <span>></span></button>
+        <form class="form__main" action="mail.php" method="POST" id="form-action">
+            <ul class="close__list" id="close-form">
+                <li class="close__item"></li>
+                <li class="close__item"></li>
+            </ul>
+            <div class="form-group form__main-group ">
+                <label for="">Введите ваше имя</label><br>
+                <input type="text" size="40" class="form-control" id="" name="user_name" placeholder="Например, Иван">
+            </div>
+        
+            <div class="form-group form__main-group">
+                <label for="">Введите номер телефона</label><br>
+                <input type="text" size="40" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+            </div>
+        
+            <div class="form-group form__main-group">
+                <label for="">Введите ваш текст</label><br>
+                <input type="text" size="40" class="form-control" id="" name="user_text" placeholder="Ваш текст">
+            </div>
+            <button type="submit" class="btn-contact footer__bth btn__position" id="btn-action">Отправить форму ></button>
+        </form>
+        <button class="footer__bth btn__position" id="btn-position">оставить заявку <span>></span></button>
     </main>
     <footer class="footer">
         
